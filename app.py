@@ -7,6 +7,9 @@ import pickle
 import gdown
 import os
 
+# Page Configuration (MUST be the first Streamlit command)
+st.set_page_config(page_title="AI-Driven Drug Discovery", layout="wide")
+
 # Model Path
 model_path = "acetylcholinesterase_model.pkl"
 
