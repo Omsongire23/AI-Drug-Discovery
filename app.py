@@ -1,4 +1,8 @@
 import streamlit as st  
+
+# Page Configuration (MUST be the first Streamlit command)
+st.set_page_config(page_title="AI-Driven Drug Discovery", layout="wide")
+
 import pandas as pd
 from PIL import Image
 import subprocess
@@ -28,9 +32,6 @@ try:
 except Exception as e:
     st.error(f"Error loading model: {e}")
     st.stop()
-
-# Page Configuration
-st.set_page_config(page_title="AI-Driven Drug Discovery", layout="wide")
 
 # Custom CSS for styling
 st.markdown(
