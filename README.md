@@ -22,8 +22,20 @@ AI-Driven Drug Discovery is a platform that leverages artificial intelligence to
 
 ---
 
-## **🖼️ Screenshots**  
-📌 **[Insert images of your app UI here]**  
+## 🖼️ Screenshots  
+📌 **App UI Previews**  
+
+### Screenshot 1  
+![Screenshot 1](Screenshot%201.png)  
+
+### Screenshot 2  
+![Screenshot 2](Screenshot%202.png)  
+
+### Screenshot 3  
+![Screenshot 3](Screenshot%203.png)  
+
+### Screenshot 4  
+![Screenshot 4](Screenshot%204.png)   
 
 ---
 
