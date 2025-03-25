@@ -1,4 +1,9 @@
-import streamlit as st
+import streamlit as st  
+
+# Page Configuration (MUST be the first Streamlit command)
+st.set_page_config(page_title="AI-Driven Drug Discovery", layout="wide")
+
+# Import the rest of the necessary modules
 import pandas as pd
 from PIL import Image
 import subprocess
@@ -6,9 +11,6 @@ import base64
 import pickle
 import gdown
 import os
-
-# Page Configuration (MUST be the first Streamlit command)
-st.set_page_config(page_title="AI-Driven Drug Discovery", layout="wide")
 
 # Model Path
 model_path = "acetylcholinesterase_model.pkl"
