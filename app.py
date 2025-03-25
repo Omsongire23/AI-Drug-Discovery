@@ -1,8 +1,4 @@
 import streamlit as st  
-
-# Page Configuration (MUST be the first Streamlit command)
-st.set_page_config(page_title="AI-Driven Drug Discovery", layout="wide")
-
 import pandas as pd
 from PIL import Image
 import subprocess
