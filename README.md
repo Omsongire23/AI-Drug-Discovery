@@ -50,6 +50,52 @@ AI-Driven Drug Discovery is a platform that leverages artificial intelligence to
 ---
 
 ## **⚙️ Installation**  
-### **1️⃣ Clone the repository:**  
+### **Clone the repository:**  
 ```sh
 git clone https://github.com/Omsongire23/AI-Drug-Discovery.git
+
+```
+
+## 📌 Usage  
+1. Upload a dataset (.csv or .txt) containing molecular structures.  
+2. You can use the provided example datasets:  
+   - `example.txt`
+     
+   - `example_acetylcholinesterase.txt`
+      
+3. The AI model will analyze bioactivity predictions.  
+4. Download results and gain insights into potential drug candidates.  
+
+## 🤝 Contributing  
+Contributions are welcome! To contribute, follow these steps:  
+
+1. Fork the repository.  
+2. Create a new branch:  
+   ```sh
+   git checkout -b feature/new-feature
+   ```
+3. Make modifications and commit changes:
+ ```sh
+git commit -am 'Add new feature
+ ```
+4. Push to the branch:
+ ```sh
+git push origin feature/new-feature
+ ```
+5. Submit a pull request.
+
+## 📜 License  
+
+This project is licensed under the [MIT License](https://github.com/Omsongire23/AI-Drug-Discovery/blob/main/LICENSE).    
+
+## Acknowledgements  
+- 🔬 **PaDEL-Descriptor** – Feature extraction for molecular structures.  
+- 📊 **Scikit-Learn** – Machine learning model training.  
+- 📡 **Streamlit** – Web interface for user interaction.  
+- ☁️ **Google Drive & gdown** – Model storage and retrieval.  
+
+## 📞 Contact  
+👤 **Om Santosh Songire**  
+📩 **Email:** [omsantoshsongire23@gmail.com](mailto:omsantoshsongire23@gmail.com)  
+🔗 **GitHub:** [Omsongire23](https://github.com/Omsongire23)  
+🔗 **LinkedIn:** [Om Santosh Songire](https://www.linkedin.com/in/omsongire/)  
