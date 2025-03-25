@@ -1,5 +1,8 @@
-import config  # Import the page config at the beginning
-import streamlit as st
+import streamlit as st  
+
+# Page Configuration (MUST be the first Streamlit command)
+st.set_page_config(page_title="AI-Driven Drug Discovery", layout="wide")
+
 import pandas as pd
 from PIL import Image
 import subprocess
@@ -8,7 +11,7 @@ import pickle
 import gdown
 import os
 
-# Model Download (AFTER `st.set_page_config()`)
+# Model Download
 model_path = "acetylcholinesterase_model.pkl"
 
 if not os.path.exists(model_path):
@@ -21,7 +24,7 @@ if not os.path.exists(model_path):
         st.error(f"Failed to download model: {e}")
         st.stop()
 
-# Load the model AFTER page config
+# Load the model
 try:
     with open(model_path, "rb") as file:
         model = pickle.load(file)
