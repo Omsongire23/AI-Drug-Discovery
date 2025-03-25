@@ -1,5 +1,5 @@
 # AI-Driven Drug Discovery  
-![GitHub license](https://img.shields.io/github/license/Omsongire23/AI-Drug-Discovery)  
+![GitHub license](https://img.shields.io/github/license/Omsongire23/AI-Drug-Discovery?label=MIT%20License)   
 
 Accelerating drug discovery with AI-powered molecular analysis and bioactivity prediction.  
 
@@ -59,9 +59,9 @@ git clone https://github.com/Omsongire23/AI-Drug-Discovery.git
 ## 📌 Usage  
 1. Upload a dataset (.csv or .txt) containing molecular structures.  
 2. You can use the provided example datasets:  
-   - `example.txt`
+- `example.txt`
      
-   - `example_acetylcholinesterase.txt`
+- `example_acetylcholinesterase.txt`
       
 3. The AI model will analyze bioactivity predictions.  
 4. Download results and gain insights into potential drug candidates.  
@@ -97,5 +97,5 @@ This project is licensed under the [MIT License](https://github.com/Omsongire23/
 ## 📞 Contact  
 👤 **Om Santosh Songire**  
 📩 **Email:** [omsantoshsongire23@gmail.com](mailto:omsantoshsongire23@gmail.com)  
-🔗 **GitHub:** [Omsongire23](https://github.com/Omsongire23)  
-🔗 **LinkedIn:** [Om Santosh Songire](https://www.linkedin.com/in/omsongire/)  
+:octocat: **GitHub:** [Omsongire23](https://github.com/Omsongire23)  
+💻 **LinkedIn:** [Om Santosh Songire](https://www.linkedin.com/in/omsongire/)  
