@@ -2,9 +2,33 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 import subprocess
-import os
 import base64
 import pickle
+import gdown
+import os
+
+# Model Path
+model_path = "acetylcholinesterase_model.pkl"
+
+# If model does not exist, download it from Google Drive
+if not os.path.exists(model_path):
+    st.info("Downloading the model... Please wait.")
+    try:
+        url = "https://drive.google.com/uc?id=1i7OF7V55zrDqSLmFMAxZm71qzUxL1KmO"
+        gdown.download(url, model_path, quiet=False)
+        st.success("Model downloaded successfully!")
+    except Exception as e:
+        st.error(f"Failed to download model: {e}")
+        st.stop()
+
+# Load the model
+try:
+    with open(model_path, "rb") as file:
+        model = pickle.load(file)
+    st.success("Model loaded successfully!")
+except Exception as e:
+    st.error(f"Error loading model: {e}")
+    st.stop()
 
 # Page Configuration
 st.set_page_config(page_title="AI-Driven Drug Discovery", layout="wide")
