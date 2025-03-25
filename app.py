@@ -193,23 +193,29 @@ st.markdown(
 
 # Molecular descriptor calculator (PaDEL-Descriptor)
 def desc_calc():
-    if not os.path.exists("./PaDEL-Descriptor/PaDEL-Descriptor.jar"):
+    padel_path = "./PaDEL-Descriptor/PaDEL-Descriptor.jar"
+
+    if not os.path.exists(padel_path):
         st.error("Error: PaDEL-Descriptor software is missing!")
         return
-    
-    bashCommand = ["java", "-Xms2G", "-Xmx2G", "-Djava.awt.headless=true", "-jar", 
-                   "D:/bioactivity-prediction-app-main/PaDEL-Descriptor/PaDEL-Descriptor.jar",
-                   "-removesalt", "-standardizenitro", "-fingerprints", 
-                   "-descriptortypes", 
-                   "D:/bioactivity-prediction-app-main/PaDEL-Descriptor/PubchemFingerprinter.xml",
-                   "-dir", "D:/bioactivity-prediction-app-main/", 
-                   "-file", "D:/bioactivity-prediction-app-main/descriptors_output.csv"]
-    
-    process = subprocess.Popen(bashCommand, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+
+    bashCommand = [
+        "java", "-Xms2G", "-Xmx2G", "-Djava.awt.headless=true", "-jar",
+        padel_path,
+        "-removesalt", "-standardizenitro", "-fingerprints",
+        "-descriptortypes", "./PaDEL-Descriptor/PubchemFingerprinter.xml",
+        "-dir", "./",
+        "-file", "descriptors_output.csv"
+    ]
+
+    process = subprocess.Popen(bashCommand, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     output, error = process.communicate()
-    
+
     if os.path.exists("molecule.smi"):
         os.remove("molecule.smi")
+
+    if not os.path.exists("descriptors_output.csv"):
+        st.error(f"Descriptor calculation failed! Error: {error.decode()}")
 
 # File download function
 def filedownload(df):
