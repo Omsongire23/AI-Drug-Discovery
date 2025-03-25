@@ -1,6 +1,6 @@
 # AI-Driven Drug Discovery  
-[![MIT License](https://img.shields.io/github/license/Omsongire23/AI-Drug-Discovery?label=MIT%20License)](./LICENSE)  
-[![License](https://img.shields.io/github/license/Omsongire23/AI-Drug-Discovery)](./LICENSE)   
+[![License: MIT](https://img.shields.io/badge/License-MIT%20%7C%20GitHub-blue)](./LICENSE)
+  
 
 Accelerating drug discovery with AI-powered molecular analysis and bioactivity prediction.  
 
